@@ -1,0 +1,107 @@
+.weather_container {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1 {
+  color: black;
+}
+
+.buttons > a {
+  margin-top: 2.125rem;
+  width: 9.5625rem;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  font: 0.875rem/1.625rem Heebo;
+  font-weight: 500;
+  color: #2c2c2c;
+  background: #1ae0ec 0% 0% no-repeat padding-box;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+header img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.input {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+input[type='text'],
+input[type='button'] {
+  height: 50px;
+  width: 100%;
+  max-width: 600px;
+  background: #4ec6f5;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+input[type='button'] {
+  width: 250px;
+}
+
+.display {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+  height: 50px;
+}
+
+.temp_container {
+  gap: 2rem;
+}
+
+.sun {
+  gap: 1rem;
+}
+
+.svg_sunrise > img {
+  height: 40px;
+}
+
+.buttons {
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .weather_container {
+    margin: 2%;
+  }
+
+  .input {
+    margin: 1rem 0;
+  }
+
+  input[type='text'],
+  input[type='button'] {
+    width: 100%;
+    max-width: none;
+  }
+
+  .display {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons a {
+    margin: 0;
+    padding: 0;
+  }
+}

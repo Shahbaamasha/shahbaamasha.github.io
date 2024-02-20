@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+  </script>
+  <link rel="stylesheet" href="../../styles/style.css" />
+  <link rel="stylesheet" href="./trainTickets.css" />
+  <link rel="stylesheet" href="../styles/leadYou.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo1:wght@500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@700&display=swap" rel="stylesheet" />
+  <title>Train Tickets</title>
+</head>
+
+<body>
+  <header>
+    <div class="header_container flex center space-between">
+      <div class="images flex center space-between">
+        <a href="../../index.html">
+          <img src="../../images/shahbaaimg.jpg" alt="me" />
+        </a>
+        <a href="../../index.html">
+          <img src="../../images/shahbaaa.png" alt="me" />
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="main_container flex center">
+    <h1>Train Tickets</h1>
+    <p>
+      Book your train tickets and enjoy a comfortable journey to your
+      destination.
+    </p>
+    <div class="buttons">
+            <a href="takeTrain.html" download>
+
+      <button>&#xab; לצפייה בפרוייקט</button>
+      <a href="takeTrain.zip" download>
+        <button>&#xab; להורדת הפרוייקט</button>
+      </a>
+    </div>
+  </div>
+
+  <article class="lang_container flex center">
+    <img src="../../images/img-Bootstrap.png" alt="bootstrap" srcset="" />
+    <img src="../../images/img-CSS.png" alt="css" srcset="" />
+  </article>
+  <main class="trainTickets_container flex column">
+    <section>
+      <div class="title_proj flex center column">
+        <h1>Book Your Train Tickets</h1>
+        <img src="./images//train.jfif" alt="" />
+      </div>
+      <h2>Train Details</h2>
+      <p>Select your train and provide your details to book your tickets.</p>
+    </section>
+    <section>
+      <h2>Select a Train</h2>
+      <form>
+        <label for="trainType">Train Type:</label>
+        <select id="trainType" name="trainType">
+          <option value="express">Express</option>
+          <option value="regional">Regional</option>
+          <option value="local">Local</option>
+        </select>
+        <br />
+
+        <label for="departureDate">Departure Date:</label>
+        <input type="date" id="departureDate" name="departureDate" required />
+        <br />
+
+        <label for="returnDate">Return Date:</label>
+        <input type="date" id="returnDate" name="returnDate" required />
+        <br />
+
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+        <br />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+        <br />
+
+        <button type="submit">Book Tickets</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <div class="footer_inc flex center space-between">
+      <h4>שהבא עמאשה</h4>
+      <h5>כל הזכויות שמורות</h5>
+    </div>
+  </footer>
+</body>
+
+</html>

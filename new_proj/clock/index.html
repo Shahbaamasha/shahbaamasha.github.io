@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>World Clock & Tasks</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../styles/style.css"
+    />
+  </head>
+  <body id="home">
+    <header>
+      <div class="header_container flex center space-between">
+        <div class="images flex center space-between">
+          <a href="../../index.html">
+            <img src="../../images/shahbaaimg.jpg" alt="me" />
+          </a>
+          <a href="../../index.html">
+            <img src="../../images/shahbaaa.png" alt="me" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main_container flex center">
+      <h2>אפליקציית שעון</h2>
+      <p>בחיים, השעון זה דבר מאוד חשוב, כאן תוכל לעשות סדר בכל הזמנים!</p>
+      <div class="buttons flex center">
+        <a
+          href="./index.html"
+          download
+          class="flex center"
+        >
+          לצפייה בפרוייקט
+        </a>
+        <a
+          href="../zip/clock.rar"
+          download
+          class="flex center"
+        >
+          להורדת הפרוייקט
+        </a>
+      </div>
+    </div>
+    <article class="lang_container flex center">
+      <img
+        src="../../images/img-js.png"
+        alt="bootstrap"
+        srcset=""
+      />
+      <img
+        src="../../images/img-CSS.png"
+        alt="css"
+        srcset=""
+      />
+      <img
+        src="../../images/img-HTML.png"
+        alt="html"
+        srcset=""
+      />
+    </article>
+    <div class="clock-container flex column">
+      <div class="app_title flex center column">
+        <h1>אפליקציית שעון</h1>
+        <small>שעון עולמי-שעון לפי מדינות</small>
+      </div>
+    </div>
+    <div class="gap countries_container flex center">
+      <div
+        class="clock"
+        id="israel"
+      >
+        <img
+          src="./imgs/israel.gif"
+          alt="Israel Flag"
+        />
+        <h2>ישראל</h2>
+        <p id="israel-time">--:--</p>
+      </div>
+      <div
+        class="clock"
+        id="usa"
+      >
+        <img
+          src="./imgs/usa.webp"
+          alt="USA Flag"
+        />
+        <h2>ארצות הברית</h2>
+        <p id="usa-time">--:--</p>
+      </div>
+      <div
+        class="clock"
+        id="china"
+      >
+        <img
+          src="./imgs/china.gif"
+          alt="China Flag"
+        />
+        <h2>סין</h2>
+        <p id="china-time">--:--</p>
+      </div>
+      <div
+        class="clock"
+        id="france"
+      >
+        <img
+          src="./imgs/france.gif"
+          alt="France Flag"
+        />
+        <h2>צרפת</h2>
+        <p id="france-time">--:--</p>
+      </div>
+    </div>
+
+    <div class="stopwatch-container flex center">
+      <div class="app_title flex center column">
+        <h2>שעון עצר</h2>
+        <small>הגדירו זמן והפעילו את השעון</small>
+        <p id="stopwatch">00:00:00</p>
+        <div>
+          <button onclick="startStopwatch()">התחל</button>
+          <button onclick="stopStopwatch()">עצור</button>
+          <button onclick="resetStopwatch()">אפס</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="tasks-container flex center column">
+      <div class="app_title flex center column">
+        <h2>משימות</h2>
+        <small>שעון חול לאירועים- הגדירו אירועים ומועד ונהלו את המשימות</small>
+
+        <input
+          type="text"
+          id="task-name"
+          placeholder="משימה"
+        />
+        <input
+          type="datetime-local"
+          id="task-time"
+        />
+        <button onclick="addTask()">הוספה</button>
+      </div>
+      <div class="tasks_box flex center">
+        <ul id="tasks-list"></ul>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_container grid center">
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon material-location-on.svg"
+            alt=""
+          />
+          <small>בוקעאתא</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-email.svg"
+            alt=""
+          />
+          <small>shahbaa_am.96@hotmail.com</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-whatsapp.svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-whatsapp (1).svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon awesome-linkedin-in.svg"
+            alt=""
+          />
+          <small>shahbaa amasha</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon awesome-facebook-f.svg"
+            alt=""
+          />
+          <small>Shahbaa Amasha</small>
+        </article>
+      </div>
+      <div class="footer_inc flex center space-between">
+        <h4>Shahbaa Amasha</h4>
+        <h5>כל הזכויות שמורות</h5>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+.main_container_sass button {
+  margin-top: 2.125rem;
+  width: 9.5625rem;
+  height: 1.875rem;
+  background: #1ae0ec 0% 0% no-repeat padding-box;
+  border-radius: 0.9375rem;
+  font: 0.875rem/1.625rem Heebo;
+  font-weight: 500;
+  color: #2c2c2c;
+}
+
+.hereAndNow_main_comtainer {
+  height: 67.875rem;
+  background: transparent linear-gradient(180deg, #281eff 0%, #2dff8c 100%) 0% 0% no-repeat padding-box;
+
+  h1 {
+    margin-top: 21.0625rem;
+    width: 47.1875rem;
+    text-align: left;
+    font: normal normal normal 10rem/14.4375rem Satisfy;
+    letter-spacing: 0rem;
+    color: #ffffff;
+    text-shadow: 0rem 0rem 2.25rem #00000087;
+    margin-bottom: 0.625rem;
+  }
+
+  h3 {
+    color: #ffffff;
+    font: normal normal normal 2rem/2.375rem Varela Round;
+    margin-bottom: 1.125rem;
+  }
+
+  small {
+    height: 3.75rem;
+    font: normal normal normal 1rem/1.25rem Varela Round;
+    color: #ffffff;
+  }
+}
+
+.form_box {
+  margin: 2rem;
+  gap: 3.125rem;
+  flex-direction: row-reverse;
+
+  button {
+    width: 12.875rem;
+    height: 3.125rem;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 0;
+    margin-bottom: 0.625rem;
+  }
+
+  #exampleInputEmail1,
+  #exampleInputPassword1 {
+    width: 26.125rem;
+    height: 3.125rem;
+    background: #f6f6f624 0% 0% no-repeat padding-box;
+    border: 0.125rem solid #ffffff;
+  }
+
+  .form-label {
+    text-align: end;
+    font: normal normal normal 1rem/1.25rem Varela Round;
+    letter-spacing: 0rem;
+    color: #f9f9f9;
+  }
+}
+
+@media (max-width: 1024px) {
+  .main_container_sass .hereAndNow_main_comtainer h1 {
+    text-align: center;
+    margin-top: 15rem;
+    font: normal normal normal 80px/86px Satisfy;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 0px 36px #00000087;
+  }
+
+  small {
+    margin: 2rem;
+    font: normal normal normal 12px/20px Varela Round;
+  }
+
+  .hereAndNow_main_comtainer {
+    .form_box {
+      flex-direction: column;
+
+      button {
+        width: 26.125rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .main_container_sass {
+    h1 {
+      margin-top: 3rem;
+    }
+
+    .hereAndNow_main_comtainer {
+      button {
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font: normal normal normal 60px/86px Satisfy;
+      }
+
+      h3 {
+        width: 298px;
+        height: 22px;
+        text-align: right;
+        font: normal normal normal 18px/22px Varela Round;
+        letter-spacing: 0px;
+        color: #ffffff;
+      }
+
+      small {
+        width: 318px;
+        height: 120px;
+        text-align: center;
+        font: normal normal normal 16px/20px Varela Round;
+        letter-spacing: 0px;
+        color: #f9f9f9;
+      }
+    }
+
+    .form_box {
+      display: block;
+      margin-left: 4rem;
+
+      button {
+        width: 80%;
+        height: 33px;
+        background: #ffffff 0% 0% no-repeat padding-box;
+      }
+
+      #exampleInputEmail1,
+      #exampleInputPassword1 {
+        width: 80%;
+        height: 36px;
+        background: #f6f6f624 0% 0% no-repeat padding-box;
+      }
+
+      .mb-3 {
+        .form-label {
+          width: 80%;
+          text-align: center;
+          text-align: end;
+          font: normal normal normal 11px/13px Varela Round;
+        }
+      }
+    }
+  }
+}

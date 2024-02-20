@@ -1,0 +1,105 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+/* body {
+  background: rgb(138, 230, 250);
+} */
+
+.card {
+  min-width: 100%;
+  border: 2px solid rgb(239, 167, 167);
+  background-color: darkgrey;
+}
+
+.tic-tac-toe {
+  gap: 10px;
+  padding: 10px;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  justify-content: center;
+  align-content: center;
+}
+
+.card.hide-x {
+  background-image: url('./img/X1.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card.hide-0 {
+  background-image: url('./img/O.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.game-buttons {
+  flex-direction: column;
+  gap: 10px;
+}
+
+span {
+  color: black;
+  background-color: bisque;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.modal-box h3 {
+  padding: 10px;
+  color: antiquewhite;
+  font-family: Caveat;
+  font-size: 1.5em;
+  letter-spacing: 3px;
+}
+
+.re-player-btn {
+  width: 200px;
+}
+
+.box-container h4 {
+  font-family: Caveat;
+  font-size: 1.5em;
+  color: rgb(4, 4, 4);
+}
+header img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+img {
+  height: 50px;
+}
+
+.buttons {
+  gap: 1rem;
+}
+
+.buttons > a {
+  margin-top: 2.125rem;
+  width: 9.5625rem;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  font: 0.875rem/1.625rem Heebo;
+  font-weight: 500;
+  color: #2c2c2c;
+  background: #1ae0ec 0% 0% no-repeat padding-box;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Responsive Styles for Small Screens */
+@media (max-width: 767px) {
+  .tic-tac-toe {
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+  }
+
+  .re-player-btn {
+    width: 100%;
+  }
+}

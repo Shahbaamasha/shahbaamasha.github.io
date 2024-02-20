@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../styles/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <title>Trivia</title>
+</head>
+
+<body onload="categoryChoose()">
+  <div id="home">
+    <header>
+      <div class="header_container flex center space-between">
+        <div class="images flex center space-between">
+          <a href="../../index.html">
+            <img src="../../../images/shahbaaimg.jpg" alt="me" />
+          </a>
+          <a href="../../index.html">
+            <img src="../../../images/shahbaaa.png" alt="me" />
+          </a>
+        </div>
+      </div>
+  </div>
+
+  </header>
+
+  <div class="main_container flex center">
+    <h2>אתר טריויה</h2>
+    <p>מה רמת הידע שלך? אם אתה חושב שאתה מספיק חכם, בוא ונסה את מזלך!</p>
+    <div class="buttons flex center">
+      <a href="./index.html" download class="flex center">
+        לצפייה בפרוייקט
+      </a>
+      <a href="../../zip/trivia.rar" download class="flex center">
+        להורדת הפרוייקט
+      </a>
+    </div>
+  </div>
+
+  <article class="lang_container flex center">
+    <img src="../../../images/img-JS.png" alt="bootstrap" srcset="" />
+    <img src="../../../images/img-CSS.png" alt="css" srcset="" />
+    <img src="../../../images/img-HTML.png" alt="html" srcset="" />
+  </article>
+  <div>
+    <div class="trivia_box flex center column">
+      <h1>Trivia Questions!</h1>
+
+      <h2>Choose Category:</h2>
+    </div>
+
+    <div class="flex center" id="category"></div>
+    <div class="flex center column">
+      <h3>How many questions do you want to answer?</h3>
+      <div id="question-window">
+        <div class="btns flex center">
+          <button class="start_btn" onclick="init(10)">
+            10
+          </button>
+          <button class="start_btn" onclick="init(15)">
+            15
+          </button>
+          <button class="start_btn" onclick="init(25)">
+            25
+          </button>
+        </div>
+      </div>
+      <div class="question"></div>
+      <div class="question-btns"></div>
+    </div>
+
+    <div>
+      <button id="restartBtn" style="display: none" onclick="restart()">
+        Restart
+      </button>
+    </div>
+  </div>
+  <footer>
+    <div class="footer_container grid center">
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon material-location-on.svg" alt="" />
+        <small>בוקעאתא</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon simple-email.svg" alt="" />
+        <small>shahbaa_am.96@hotmail.com</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon simple-whatsapp.svg" alt="" />
+        <small>050-671-3707</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon simple-whatsapp (1).svg" alt="" />
+        <small>050-671-3707</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon awesome-linkedin-in.svg" alt="" />
+        <small>shahbaa amasha</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon awesome-facebook-f.svg" alt="" />
+        <small>Shahbaa Amasha</small>
+      </article>
+    </div>
+    <div class="footer_inc flex center space-between">
+      <h4>Shahbaa Amasha</h4>
+      <h5>כל הזכויות שמורות</h5>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  </div>
+
+</html>

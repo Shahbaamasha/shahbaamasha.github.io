@@ -1,0 +1,860 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="styles/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo1:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio Project</title>
+  </head>
+
+  <body
+    id="home"
+    class="full"
+  >
+    <header class="container">
+      <div class="header_container">
+        <div class="flex center space-between">
+          <a href="#home">
+            <div class="images flex center space-between">
+              <img
+                src="./images/shahbaaimg.jpg"
+                alt="My profile image"
+              />
+              <img
+                src="./images/shahbaaa.png"
+                alt="Logo Image"
+              />
+            </div>
+
+            <div class="links_box flex center">
+              <li><a href="#contact">צור קשר</a></li>
+              <li><a href="#sites">אתרים</a></li>
+              <li><a href="#services">שירותים</a></li>
+              <li><a href="#about">אודות</a></li>
+              <li><a href="#home">ראשי</a></li>
+            </div>
+          </a>
+          <button
+            class="taget"
+            onclick="openMenu()"
+          >
+            <div class="linee"></div>
+            <div class="linee"></div>
+            <div class="linee"></div>
+            <ul class="sub-list">
+              <li><a href="#about">אודות</a></li>
+              <li><a href="#services">שירותים</a></li>
+              <li><a href="#sites">אתרים</a></li>
+              <li><a href="#contact">צור קשר</a></li>
+            </ul>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="main_container flex center">
+      <h1>תיק עבודות</h1>
+      <p>
+        לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+        מקום” בעת עריכה, בתחום הדפוס, ההדפסה והפרסום. למשל: לורםלורם איפסום או
+        בקיצור לי.
+      </p>
+    </div>
+
+    <article class="lang_container flex center">
+      <img
+        src="./images/img-Bootstrap.png"
+        alt="bootstrap"
+        srcset=""
+      />
+      <img
+        src="./images/img-CSS.png"
+        alt="css"
+        srcset=""
+      />
+      <img
+        src="./images/img-HTML.png"
+        alt="html"
+        srcset=""
+      />
+      <img
+        src="./images/img-SASS.png"
+        alt="sass"
+        srcset=""
+      />
+      <img
+        src="./images/img-JS.png"
+        alt="sass"
+        srcset=""
+      />
+    </article>
+
+    <div
+      id="about"
+      class="me_container flex"
+    >
+      <img
+        src="./images/shahbaaimg.jpg"
+        alt="My profile pic"
+      />
+      <h1>קצת עלי</h1>
+      <p>
+        שמי שהבאא עמאשה, נולדתי וגדלתי בכפר בוקעותא ברמת הגולן. אני נמצאת בתהליך
+        הפתחתי של להפוך למפתחת בניית אתרים. כיום אני סטודנטת במכללת האקריו,
+        היכולת לשבת מול מחשב וליצור יישומים מרהיבים מרשותי התוך עדיין נבדקת.<br />
+        אני מאמינה שהעולם של הפיתוח הוא המקום בו אני מוצאת את אמיתי וכיום אני
+        בשלב בו אני מתמקצעת ובונה פרוייקטים מרשימים.
+      </p>
+      <button class="button_btn">
+        <a
+          href="./images/ShahbaaCV.pdf"
+          download
+          >להורדת קורות חיים</a
+        >
+      </button>
+    </div>
+
+    <div
+      id="services"
+      class="my_work_container flex"
+    >
+      <h1>עבודות נבחרות</h1>
+      <p>
+        לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא
+        מקום” בעת עריכה, בתחום.
+      </p>
+      <div class="projects_area grid">
+        <article class="project_box">
+          <img
+            src="./images/proj1.png"
+            alt="first proj"
+          />
+          <div class="project_info">
+            <h2>קופון קפה</h2>
+            <p>
+              בואו להנות ממגון רחב של רשתות בתי קפה אשר מציעות לכם את הקפה עליהם
+            </p>
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-Bootstrap.png"
+                alt="bootstrap"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./projects/coffe/coffe.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+        <article class="project_box">
+          <img
+            src="./images/Group 198.png"
+            alt="second proj"
+          />
+          <div class="project_info">
+            <h2>!בוא נוביל</h2>
+            <p>תן לנו לקחת אותך צעד אחד קדימה, לעבר המטרה שלך!</p>
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-Bootstrap.png"
+                alt="bootstrap"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./projects/leadYou/leadYou.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+        <article class="project_box">
+          <img
+            src="./images/1.png"
+            alt="third proj"
+          />
+          <div class="project_info">
+            <h2>כאן ועכשיו</h2>
+            <p>
+              זה הזמן לשנות הרגלים, "כאן ועכשיו" נותנים לכם את כל הכלים להגשמה
+              עצמית...הצטרפו עוד היום
+            </p>
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+
+              <img
+                src="./images/img-SASS.png"
+                alt="sass"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./projects/hereAndNow/hereAndNow.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+        <article class="project_box">
+          <img
+            src="./images/discover.png"
+            alt="fourth proj"
+          />
+          <div class="project_info">
+            <h2>לגלות את העולם</h2>
+            <p>
+              בואו לגלות את העולם ממקום שעדיין לא ראיתם, אנחנו נבנה לכם טיול
+              שלעולם לא תשכחו
+            </p>
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./projects/discoverTheWorld/discoverTheWorld.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+        <article class="project_box">
+          <img
+            src="./images/train_proj.png"
+            alt="fifth proj"
+          />
+          <div class="project_info">
+            <h2>כרטיסים לרכבת</h2>
+            <p>
+              Book your train tickets and enjoy a comfortable journey to your
+              destination.
+            </p>
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+
+            <button
+              onclick="window.location.href='./projects/takeTrain/takeTrain.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+        <article class="project_box">
+          <img
+            src="./images/rena car.png"
+            alt=""
+          />
+
+          <div class="project_info">
+            <h2>Car-Li</h2>
+            <p>תמיד חלמתם על רכב? בואו אלינו!</p>
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./projects/rentCar/rentCar.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div
+      id="sites"
+      class="my_sites_container full grid center"
+    >
+      <article class="flex center">
+        <h1 style="text-align: center">My sites</h1>
+      </article>
+      <div class="new_projects grid">
+        <article class="project_box">
+          <img
+            src="./images/pokedex.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Pokedex Site</h2>
+            <p>Do you catch them all?</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./main_project/games/pokedex/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/trivia.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Trivia Site</h2>
+            <p>What is your knowledge?</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./main_project/games/trivia/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/weather.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Wheater Site</h2>
+            <p>Wheater is everything!</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./main_project/games/weather/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/tic tac toe.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Tic Tac Toe Game</h2>
+            <p>Come and play!!!</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./main_project/games/tictactoe/tic-tac-toe.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/pacman.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Pac-Man Game!</h2>
+            <p>Retro game but in a new version!</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./main_project/games/packman/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/memory.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Memory Game!</h2>
+            <p>How is your memory?!</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./main_project/games/memory_game/memory-game.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/simon.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Simon Game</h2>
+            <p>Test your memory and reflexes with the classic Simon game!</p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./new_proj/simon/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/clock.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Clock Aplication</h2>
+            <p>
+              Stay on schedule with our sleek clock app, your ultimate time
+              management companion!
+            </p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./new_proj/clock/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/users.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Users Managment</h2>
+            <p>
+              Easily manage users and permissions with our intuitive user
+              management system.
+            </p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./new_proj/users_managment/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+
+        <article class="project_box">
+          <img
+            src="./images/page_builder.png"
+            alt="html"
+          />
+          <div class="site flex column center">
+            <h2>Page Builder</h2>
+            <p>
+              Create stunning websites with ease using our powerful page builder
+              tool.
+            </p>
+          </div>
+          <div class="project_info">
+            <div class="langs">
+              <img
+                src="./images/img-HTML.png"
+                alt="html"
+                srcset=""
+              />
+              <img
+                src="./images/img-CSS.png"
+                alt="css"
+                srcset=""
+              />
+              <img
+                src="./images/img-JS.png"
+                alt="css"
+                srcset=""
+              />
+            </div>
+            <button
+              onclick="window.location.href='./new_proj/page_builder/index.html'"
+            >
+              <span>&#xab;</span> לעמוד הפרויקט
+            </button>
+          </div>
+        </article>
+      </div>
+    </div>
+    <div
+      id="contact"
+      class="contact_container flex"
+    >
+      <article>
+        <img
+          src="./images/Rectangle 41.png"
+          alt=""
+        />
+      </article>
+
+      <div class="contact_box container flex">
+        <h1>צור קשר</h1>
+        <h5>תצרו קשר ונחזור תוך 3 ימים עסקיים</h5>
+        <form
+          action=""
+          class="form_box flex"
+        >
+          <label for="">שם מלא</label>
+          <input
+            type="text"
+            name="full_name"
+          />
+          <label for="">דוא״ל</label>
+          <input
+            type="email"
+            name="email"
+          />
+          <label for="">טלפון</label>
+          <input
+            type="number"
+            name="phone"
+          />
+          <label for="">תוכן ההודעה</label>
+          <textarea
+            name="message"
+            id=""
+          ></textarea>
+          <button
+            class="btn"
+            type="submit"
+          >
+            שליחה
+          </button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_container grid center">
+        <article class="svg_box flex center">
+          <img
+            src="./images/Icon material-location-on.svg"
+            alt=""
+          />
+          <small>בוקעאתא</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="./images/Icon simple-email.svg"
+            alt=""
+          />
+          <small>shahbaa_am.96@hotmail.com</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="./images/Icon simple-whatsapp.svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="./images/Icon simple-whatsapp (1).svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="./images/Icon awesome-linkedin-in.svg"
+            alt=""
+          />
+          <small>shahbaa amasha</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="./images/Icon awesome-facebook-f.svg"
+            alt=""
+          />
+          <small>Shahbaa Amasha</small>
+        </article>
+      </div>
+      <div class="footer_inc flex center space-between">
+        <h4>Shahbaa Amasha</h4>
+        <h5>כל הזכויות שמורות</h5>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        var form = document.querySelector('.form_box')
+        form.addEventListener('submit', function (event) {
+          var fullName = document.querySelector('input[name="full_name"]')
+          var email = document.querySelector('input[name="email"]')
+          var phone = document.querySelector('input[name="phone"]')
+          var message = document.querySelector('textarea[name="message"]')
+          var isValid = true
+
+          var inputs = form.querySelectorAll('input, textarea')
+          inputs.forEach(function (input) {
+            input.classList.remove('error')
+          })
+
+          if (fullName.value.trim() === '') {
+            isValid = false
+            fullName.classList.add('error')
+          }
+
+          var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+          if (!emailPattern.test(email.value.trim())) {
+            isValid = false
+            email.classList.add('error')
+          }
+
+          if (message.value.trim() === '') {
+            isValid = false
+            message.classList.add('error')
+          }
+
+          if (!isValid) {
+            event.preventDefault()
+          }
+          alert('Message is sent!')
+        })
+      })
+    </script>
+
+    <script>
+      function openMenu() {
+        let elMenu = document.querySelector('.sub-list')
+        elMenu.classList.toggle('open')
+
+        if (elMenu.classList.contains('open')) {
+          elMenu.style.display = 'block'
+        } else {
+          elMenu.style.display = 'none'
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,238 @@
+.main_container_discover {
+  width: 100%;
+  padding-top: 298px;
+  padding-bottom: 266px;
+  background: #e5eeff 0% 0% no-repeat padding-box;
+}
+
+.discover_the_world_container {
+  background: #e5eeff 0% 0% no-repeat padding-box;
+}
+
+.disc {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.first_line {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.second_line {
+  margin-top: 1.25rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.third_line {
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.fourth_line {
+  gap: 1.25rem;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main_discover_container > img {
+  width: 18.5625rem;
+  height: 16.9375rem;
+}
+
+.discover {
+  width: 38.3125rem;
+  height: 35.125rem;
+  background: #020253 0% 0% no-repeat padding-box;
+}
+
+.discover > h1 {
+  height: 5rem;
+  text-align: center;
+  font: normal normal bold 3.8125rem/5rem Assistant;
+  color: #0ee1da;
+  letter-spacing: 0;
+}
+
+.discover > h3 {
+  width: 29.6875rem;
+  height: 3.25rem;
+  text-align: center;
+  font: normal normal normal 1.25rem/1.625rem Assistant;
+  letter-spacing: 0;
+  color: #f9f9f9;
+}
+
+.experience_box {
+  min-width: 100%;
+  height: 53.25rem;
+  background: #8e097c 0% 0% no-repeat padding-box;
+  text-align: center;
+}
+
+.experience_box > h1 {
+  font: normal normal bold 2.1875rem/2.875rem Assistant;
+  letter-spacing: 0;
+  color: #ffffff;
+  margin-top: 3.9375rem;
+}
+
+.experience_box > h3 {
+  font: normal normal normal 1.25rem/1.625rem Assistant;
+  letter-spacing: 0;
+  color: #f9f9f9;
+  margin-top: 1.4375rem;
+  margin-bottom: 4.5625rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.form_box1 > label {
+  text-align: right;
+  font: normal normal bold 1rem/1.5rem Heebo;
+  color: #0ee1da;
+  align-self: end;
+}
+
+.form_box1 > input {
+  width: 31.25rem;
+  height: 3.75rem;
+  background: #e5eeff 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.form_box1 > button {
+  margin-top: 1.875rem;
+  font: normal normal bold 1.5rem/2.0625rem Heebo;
+  letter-spacing: 0.036rem;
+  color: #011560;
+  width: 31.3125rem;
+  height: 3.75rem;
+  background: #0ee1da 0% 0% no-repeat padding-box;
+}
+
+.form_box1 > textarea {
+  width: 31.25rem;
+  height: 10.75rem;
+  background: #e5eeff 0% 0% no-repeat padding-box;
+}
+
+@media (max-width: 1024px) {
+  .disc,
+  .first_line,
+  .third_line {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    gap: 1.25rem;
+  }
+
+  .first_line,
+  .second_line {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 180px);
+    order: 3;
+    gap: 1rem;
+  }
+
+  .fourth_line {
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 180px);
+    order: 2;
+    gap: 1rem;
+  }
+
+  .first_line > img {
+    width: 100%;
+    height: 100%;
+  }
+  .second_line > img {
+    width: 100%;
+    height: 100%;
+  }
+  .third_line > img {
+    width: 100%;
+    height: 100%;
+  }
+  .fourth_line > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .main_container > .buttons {
+    margin-top: 9rem;
+  }
+
+  .disc {
+    width: 100%;
+  }
+
+  .discover {
+    order: -2;
+    width: 100%;
+  }
+
+  .discover > h3 {
+    width: 16rem;
+  }
+
+  .form_box1 {
+    width: 100%;
+  }
+
+  .main_container_discover {
+    padding: 0;
+    margin: 0;
+  }
+
+  .main_discover_container > img {
+    width: 50%;
+    height: 50%;
+  }
+
+  .second_line img:nth-child(1) {
+    order: 3;
+  }
+
+  .second_line img:nth-child(2) {
+    order: 4;
+  }
+
+  .second_line img:nth-child(3) {
+    order: 1;
+  }
+
+  .second_line img:nth-child(4) {
+    order: 2;
+  }
+
+  .first_line img {
+  }
+
+  .discover {
+  }
+
+  .experience_box {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+  }
+  .form_box1 > input {
+    width: 100%;
+  }
+  .form_box1 > textarea {
+    width: 100%;
+  }
+
+  .form_box1 > button {
+    width: 100%;
+  }
+  .discover_the_world_container {
+    width: 100%;
+  }
+}

@@ -1,0 +1,137 @@
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.trivia_box {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+}
+
+.question-window {
+  max-width: 80%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  gap: 1rem;
+}
+
+.buttons > a {
+  margin-top: 2.125rem;
+  width: 9.5625rem;
+  height: 1.875rem;
+  border-radius: 0.9375rem;
+  font: 0.875rem/1.625rem Heebo;
+  font-weight: 500;
+  color: #2c2c2c;
+  background: #1ae0ec 0% 0% no-repeat padding-box;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.question-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  max-width: 100%;
+}
+
+.btns_category {
+  display: grid;
+  padding: 1rem;
+  max-height: 50%;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 1rem;
+  border: 1px solid #a3c8ee;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+#btn_category {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  color: #152d45;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.btns {
+  gap: 1rem;
+}
+
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.back > a {
+  border-radius: 12px;
+  width: 100px;
+  background-color: rgb(11, 18, 234);
+  text-decoration: none;
+  color: rgb(234, 131, 131);
+  padding: 1rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+  .question-window {
+    max-width: 90%;
+  }
+  #btn_category {
+    color: #fff;
+    font-weight: 700;
+    font-size: small;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .buttons {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttons a {
+    margin: 0;
+    padding: 0;
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../styles/style.css"
+    />
+    <title>Page Builder</title>
+  </head>
+  <body id="home">
+    <header>
+      <div class="header_container flex center space-between">
+        <div class="images flex center space-between">
+          <a href="../../index.html">
+            <img src="../../images/shahbaaimg.jpg" alt="me" />
+          </a>
+          <a href="../../index.html">
+            <img src="../../images/shahbaaa.png" alt="me" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main_container flex center">
+      <h2>אתר בניית לאתרים</h2>
+      <p>תמיד חלמתם לבנות אתר? יש לנו משהו בשבילכם שיעזור לכם לעשות את זה!</p>
+      <div class="buttons flex center">
+        <a
+          href="./index.html"
+          download
+          class="flex center"
+        >
+          לצפייה בפרוייקט
+        </a>
+        <a
+          href="../zip/page_builder.rar"
+          download
+          class="flex center"
+        >
+          להורדת הפרוייקט
+        </a>
+      </div>
+    </div>
+    <article class="lang_container flex center">
+      <img
+        src="../../images/img-js.png"
+        alt="bootstrap"
+        srcset=""
+      />
+      <img
+        src="../../images/img-CSS.png"
+        alt="css"
+        srcset=""
+      />
+      <img
+        src="../../images/img-HTML.png"
+        alt="html"
+        srcset=""
+      />
+    </article>
+    <div class="page_container gap">
+      <div class="form-section">
+        <label for="elementType">סוג אלמנט:</label>
+        <select id="element-type-select">
+          <option value="span">Span</option>
+          <option value="div">Div</option>
+          <option value="h1">H1</option>
+          <option value="h2">H2</option>
+          <option value="h3">H3</option>
+          <option value="p">P</option>
+        </select>
+        <br />
+        <label for="backgroundColor">צבע רקע:</label>
+        <input
+          type="color"
+          id="element-background-color"
+        />
+        <label for="width">רוחב:</label>
+        <input
+          type="number"
+          id="element-width"
+          placeholder="Width"
+        />
+        <select id="element-width-unit">
+          <option value="px">px</option>
+          <option value="%">%</option>
+          <option value="rem">rem</option>
+        </select>
+        <label for="height">גובה:</label>
+        <input
+          type="number"
+          id="element-height"
+          placeholder="Height"
+        />
+        <select id="element-height-unit">
+          <option value="px">px</option>
+          <option value="%">%</option>
+          <option value="rem">rem</option>
+        </select>
+        <label for="content">טקסט:</label>
+        <input
+          type="text"
+          placeholder="מה לרשום?"
+          id="content"
+        />
+        <label for="textColor">צבע טקסט:</label>
+        <input
+          type="color"
+          id="textColor"
+        />
+        <label for="borderWidth">עובי מסגרת:</label>
+        <input
+          type="number"
+          id="borderWidth"
+          placeholder="Border Width"
+        />
+        <label for="borderStyle">Border Style:</label>
+        <select id="element-border-style">
+          <option value="solid">קו רצוף</option>
+          <option value="dotted">נקודות</option>
+          <option value="dashed">מקווקוו</option>
+        </select>
+        <label for="borderColor">צבע מסגרת:</label>
+        <input
+          type="color"
+          id="borderColor"
+        />
+        <label for="padding">ריפוד:</label>
+        <input
+          type="number"
+          id="padding"
+          placeholder="Padding"
+        />
+        <label for="margin">שוליים:</label>
+        <input
+          type="number"
+          id="margin"
+          placeholder="Margin"
+        />
+        <label for="borderRadius">רדיוס מסגרת:</label>
+        <input
+          type="number"
+          id="borderRadius"
+          placeholder="Border Radius"
+        />
+
+        <label for="shadowX">הצללה אנכית:</label>
+        <input
+          type="number"
+          id="shadowX"
+          placeholder="Shadow X"
+        />
+        <label for="shadowY">הצללה אופקית:</label>
+        <input
+          type="number"
+          id="shadowY"
+          placeholder="Shadow Y"
+        />
+        <label for="shadowColor">צבע הצללה:</label>
+        <input
+          type="color"
+          id="shadowColor"
+        />
+        <br />
+        <button onclick="addElement()">הוסף אלמנט</button>
+        <button onclick="clearBoard()">נקה לוח</button>
+        <button onclick="saveToLocalStorage()">שמור</button>
+      </div>
+      <div
+        class="content-section"
+        id="content-container"
+      ></div>
+    </div>
+    <footer>
+      <div class="footer_container grid center">
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon material-location-on.svg"
+            alt=""
+          />
+          <small>בוקעאתא</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-email.svg"
+            alt=""
+          />
+          <small>shahbaa_am.96@hotmail.com</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-whatsapp.svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-whatsapp (1).svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon awesome-linkedin-in.svg"
+            alt=""
+          />
+          <small>shahbaa amasha</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon awesome-facebook-f.svg"
+            alt=""
+          />
+          <small>Shahbaa Amasha</small>
+        </article>
+      </div>
+      <div class="footer_inc flex center space-between">
+        <h4>Shahbaa Amasha</h4>
+        <h5>כל הזכויות שמורות</h5>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

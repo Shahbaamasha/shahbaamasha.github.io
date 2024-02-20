@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Memory Game</title>
+
+    <link
+      rel="stylesheet"
+      href="../memory_game/js/lib/bootstrap.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="./css/style.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../styles/style.css"
+    />
+    <link
+      rel="icon"
+      href="../img/Favicon.png"
+    />
+  </head>
+
+  <body class="main-layout">
+    <header>
+      <div class="header_container flex center space-between">
+        <div class="images flex center space-between">
+          <a href="../../../index.html">
+            <img
+              src="../../../images/shahbaaimg.jpg"
+              alt="me"
+            />
+          </a>
+          <a href="../../../index.html">
+            <img
+              src="../../../images/shahbaaa.png"
+              alt="me"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main_container flex center">
+      <h2>משחק הזכרון</h2>
+      <p>זהו משחק הזכרון הכי קשה שיש! חושב שתוכל לנצח?</p>
+      <div class="buttons flex center">
+        <a
+          href="./memory-game.html"
+          download
+          class="flex center"
+        >
+          לצפייה בפרוייקט
+        </a>
+        <a
+          href="../../zip/memory_game.rar"
+          download
+          class="flex center"
+        >
+          להורדת הפרוייקט
+        </a>
+      </div>
+    </div>
+    <article class="lang_container flex center">
+      <img
+        src="../../../images/img-Bootstrap.png"
+        alt="bootstrap"
+        srcset=""
+      />
+      <img
+        src="../../../images/img-CSS.png"
+        alt="css"
+        srcset=""
+      />
+      <img
+        src="../../../images/img-HTML.png"
+        alt="html"
+        srcset=""
+      />
+    </article>
+    <div
+      class="main-screen full"
+      onclick="toggleMenu()"
+    ></div>
+
+    <section class="">
+      <div class="main-container">
+        <div class="box-container">
+          <h1>Memory Game!</h1>
+          <h5>Choose the level before!</h5>
+
+          <section class="levels">
+            <button
+              class="btn btn-success size"
+              onclick="gameSize(12)"
+            >
+              Easy
+            </button>
+            <button
+              class="btn btn-warning size"
+              onclick="gameSize(16)"
+            >
+              Normal
+            </button>
+            <button
+              class="btn btn-danger size"
+              onclick="gameSize(20)"
+            >
+              Expert
+            </button>
+          </section>
+          <button
+            onclick="onInit()"
+            class="start btn btn-primary"
+            style="display: none"
+          >
+            Are You Ready?
+          </button>
+        </div>
+      </div>
+
+      <div class="score-container main-layout">
+        <h3>Number of tries:<span> 0</span></h3>
+      </div>
+
+      <div
+        class="memory_container grid"
+        id="box"
+      ></div>
+
+      <div class="modal-box display-none">
+        <h1>You Won! 😎</h1>
+        <button
+          class="btn btn-success"
+          onclick="restartGame()"
+        >
+          Restart
+        </button>
+      </div>
+    </section>
+    <footer>
+      <div class="footer_container grid center">
+        <article class="svg_box flex center">
+          <img
+            src="../../../images/Icon material-location-on.svg"
+            alt=""
+          />
+          <small>בוקעאתא</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../../images/Icon simple-email.svg"
+            alt=""
+          />
+          <small>shahbaa_am.96@hotmail.com</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../../images/Icon simple-whatsapp.svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../../images/Icon simple-whatsapp (1).svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../../images/Icon awesome-linkedin-in.svg"
+            alt=""
+          />
+          <small>shahbaa amasha</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../../images/Icon awesome-facebook-f.svg"
+            alt=""
+          />
+          <small>Shahbaa Amasha</small>
+        </article>
+      </div>
+      <div class="footer_inc flex center space-between">
+        <h4>Shahbaa Amasha</h4>
+        <h5>כל הזכויות שמורות</h5>
+      </div>
+    </footer>
+    <script>
+      function toggleMenu() {
+        document.body.classList.toggle('menu-opened')
+      }
+    </script>
+    <script src="../js/lib/bootstrap.bundle.js"></script>
+
+    <script src="./js/utils/utils.js"></script>
+    <script src="./js/memory-game.js"></script>
+  </body>
+</html>

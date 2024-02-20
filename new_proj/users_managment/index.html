@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>User Management System</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../../styles/style.css"
+    />
+  </head>
+  <body id="home">
+    <header>
+      <div class="header_container flex center space-between">
+        <div class="images flex center space-between">
+          <a href="../../index.html">
+            <img src="../../images/shahbaaimg.jpg" alt="me" />
+          </a>
+          <a href="../../index.html">
+            <img src="../../images/shahbaaa.png" alt="me" />
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="main_container flex center">
+      <h2>ניהול משתמשים</h2>
+      <p>תמיד רציתם לנהל את כל המשתמשים שיש לכם באתר? זה המקום שלכם!</p>
+      <div class="buttons flex center">
+        <a
+          href="./index.html"
+          download
+          class="flex center"
+        >
+          לצפייה בפרוייקט
+        </a>
+        <a
+          href="../zip/users_managment.rar"
+          download
+          class="flex center"
+        >
+          להורדת הפרוייקט
+        </a>
+      </div>
+    </div>
+    <article class="lang_container flex center">
+      <img
+        src="../../images/img-js.png"
+        alt="bootstrap"
+        srcset=""
+      />
+      <img
+        src="../../images/img-CSS.png"
+        alt="css"
+        srcset=""
+      />
+      <img
+        src="../../images/img-HTML.png"
+        alt="html"
+        srcset=""
+      />
+    </article>
+    <div class="users_container">
+      <h2>הרשמה</h2>
+      <div class="register">
+        <form
+          id="registration-form"
+          class="flex gap"
+        >
+          <input
+            type="text"
+            id="username"
+            placeholder="שם פרטי"
+            required
+          />
+          <input
+            type="text"
+            id="userLastName"
+            placeholder="שם משפחה"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="דוא''ל"
+            required
+          />
+          <input
+            type="password"
+            id="password"
+            placeholder="סיסמא"
+            required
+          />
+          <button type="submit">הרשמה</button>
+        </form>
+      </div>
+      <div class="login">
+        <h2>התחברות</h2>
+
+        <form
+          id="login-form"
+          class="flex gap"
+        >
+          <input
+            type="text"
+            id="login-username"
+            placeholder="שם משתמש"
+            required
+          />
+          <input
+            type="password"
+            id="login-password"
+            placeholder="סיסמא"
+            required
+          />
+          <button type="submit">התחבר</button>
+        </form>
+      </div>
+      <div class="table-container">
+        <h2>רשימת משתמשים</h2>
+
+        <table id="users-table flex center">
+          <thead>
+            <tr>
+              <th>שם פרטי</th>
+              <th>שם משפחה</th>
+              <th>דוא"ל</th>
+              <th>סיסמא</th>
+              <th>סטטוס</th>
+              <th>פעולות</th>
+            </tr>
+          </thead>
+          <tbody id="users-list"></tbody>
+        </table>
+      </div>
+    </div>
+    <footer>
+      <div class="footer_container grid center">
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon material-location-on.svg"
+            alt=""
+          />
+          <small>בוקעאתא</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-email.svg"
+            alt=""
+          />
+          <small>shahbaa_am.96@hotmail.com</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-whatsapp.svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon simple-whatsapp (1).svg"
+            alt=""
+          />
+          <small>050-671-3707</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon awesome-linkedin-in.svg"
+            alt=""
+          />
+          <small>shahbaa amasha</small>
+        </article>
+        <article class="svg_box flex center">
+          <img
+            src="../../images/Icon awesome-facebook-f.svg"
+            alt=""
+          />
+          <small>Shahbaa Amasha</small>
+        </article>
+      </div>
+      <div class="footer_inc flex center space-between">
+        <h4>Shahbaa Amasha</h4>
+        <h5>כל הזכויות שמורות</h5>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

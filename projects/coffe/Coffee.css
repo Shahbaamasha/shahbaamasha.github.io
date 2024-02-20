@@ -1,0 +1,117 @@
+body {
+  background-color: #ebfeff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main_coffee_container {
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  box-shadow: 0px 0px 2.5rem #00000066;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 11.5rem;
+  background-color: #ffffff;
+  padding: 0 1.25rem;
+  max-width: 74.9375rem;
+}
+
+.coffee_box {
+  flex-direction: column;
+}
+
+.coffee_box > img {
+  height: 25rem;
+  max-width: 100%;
+}
+
+.coffee_form {
+  flex-direction: column;
+  text-align: right;
+  margin-left: 10rem;
+}
+
+.coffee_info > h1 {
+  text-align: right;
+  font: normal normal 900 2.6875rem/3.9375rem Heebo;
+  letter-spacing: 0;
+  color: #020253;
+}
+
+.coffee_info > p {
+  width: 417px;
+  text-align: right;
+  font: normal normal normal 1.25rem/1.8125rem Heebo;
+  letter-spacing: 0;
+  color: #020253;
+}
+
+.lang_container {
+  margin-bottom: 7rem;
+}
+
+.mb-3 > input {
+  background-color: #e5eeff;
+  width: 100%;
+  height: 3.125rem;
+  padding-bottom: 2.5rem;
+}
+
+.mb-3 > label {
+  height: 24px;
+  text-align: right;
+  font: normal normal bold 16px/24px Heebo;
+  letter-spacing: 0px;
+  color: #2c2c2c;
+}
+
+form > button {
+  width: 166px;
+  height: 50px;
+  background: #020253 0% 0% no-repeat padding-box;
+  font: normal normal bold 1.375rem/1.875rem Heebo;
+  letter-spacing: 0.02rem;
+  color: #ffffff;
+}
+
+@media (max-width: 64rem) {
+  .main_coffee_container {
+    flex-direction: column;
+    height: 100%;
+    padding: 0 0.625rem 5rem;
+  }
+
+  .coffee_box > img {
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 47.9375rem) {
+  .main_coffee_container {
+    padding: 1rem;
+  }
+
+  .main_container > h1 {
+    text-align: center;
+  }
+
+  .coffee_box > img {
+    width: 90%;
+  }
+
+  .coffee_info > h1,
+  p {
+    padding-right: 2.5rem;
+  }
+
+  .coffee_form {
+    padding: 0;
+    margin-left: 0;
+  }
+  form {
+    padding: 2rem;
+  }
+}

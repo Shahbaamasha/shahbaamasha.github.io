@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>PACMAN</title>
+  <link rel="stylesheet" href="../../../styles/style.css" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+
+<body onkeyup="movePacman(event)">
+  <header>
+    <div class="header_container flex center space-between">
+      <div class="header_container flex center space-between">
+        <div class="images flex center space-between">
+          <a href="../../index.html">
+            <img src="../../../images/shahbaaimg.jpg" alt="me" />
+          </a>
+          <a href="../../index.html">
+            <img src="../../../images/shahbaaa.png" alt="me" />
+          </a>
+        </div>
+      </div>
+  </header>
+  <div class="main_container flex center">
+    <h2>משחק פאקמן</h2>
+    <p>משחק פאקמן חוזר במהדורה חדשה, מוזמנים לנסות ולנצח</p>
+    <div class="buttons flex center">
+      <a href="./index.html" download class="flex center">
+        לצפייה בפרוייקט
+      </a>
+      <a href="../../zip/packman.rar" download class="flex center">
+        להורדת הפרוייקט
+      </a>
+    </div>
+  </div>
+  <article class="lang_container flex center">
+    <img src="../../../images/img-JS.png" alt="bootstrap" srcset="" />
+    <img src="../../../images/img-CSS.png" alt="css" srcset="" />
+    <img src="../../../images/img-HTML.png" alt="html" srcset="" />
+  </article>
+
+  <main class="packman_container">
+    <h2>Score: <span>0</span></h2>
+
+    <button class="flex center" onclick="start()">
+      התחל את המשחק
+    </button>
+    <div class="modal flex center"><span>נאכלת</span> - המשחק נגמר</div>
+
+    <div class="board-container"></div>
+
+    <div class="mobile-controls flex center">
+      <div class="btn-up">
+        <button id="btnLeft" class="btns">
+          ←
+        </button>
+      </div>
+      <div class="left-right">
+        <button id="btnUp" class="btns">
+          ↑
+        </button>
+        <button id="btnDown" class="btns">
+          ↓
+        </button>
+      </div>
+
+      <button id="btnRight" class="btns">
+        →
+      </button>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer_container grid center">
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon material-location-on.svg" alt="" />
+        <small>בוקעאתא</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon simple-email.svg" alt="" />
+        <small>shahbaa_am.96@hotmail.com</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon simple-whatsapp.svg" alt="" />
+        <small>050-671-3707</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon simple-whatsapp (1).svg" alt="" />
+        <small>050-671-3707</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon awesome-linkedin-in.svg" alt="" />
+        <small>shahbaa amasha</small>
+      </article>
+      <article class="svg_box flex center">
+        <img src="../../../images/Icon awesome-facebook-f.svg" alt="" />
+        <small>Shahbaa Amasha</small>
+      </article>
+    </div>
+    <div class="footer_inc flex center space-between">
+      <h4>Shahbaa Amasha</h4>
+      <h5>כל הזכויות שמורות</h5>
+    </div>
+  </footer>
+  <script src="js/utils.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/pacman.js"></script>
+  <script src="js/ghost.js"></script>
+  <script>
+    document
+      .getElementById('btnUp')
+      .addEventListener('click', () => movePacman({
+        code: 'ArrowUp'
+      }))
+    document
+      .getElementById('btnLeft')
+      .addEventListener('click', () => movePacman({
+        code: 'ArrowLeft'
+      }))
+    document
+      .getElementById('btnDown')
+      .addEventListener('click', () => movePacman({
+        code: 'ArrowDown'
+      }))
+    document
+      .getElementById('btnRight')
+      .addEventListener('click', () => movePacman({
+        code: 'ArrowRight'
+      }))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+p {
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 30px;
+}
+
+/* Form Styles */
+form {
+  padding: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: #ff5733;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #ff7846;
+}
+
+.trainTickets_container {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.title_proj > img {
+  width: 70%;
+  margin-bottom: 2rem;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  main {
+    max-width: 80%;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 20px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  form {
+    padding: 15px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='tel'],
+  select,
+  button {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+}
